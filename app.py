@@ -23,7 +23,7 @@ def main():
 if __name__ == "__main__":
     main()
 
-img=Image.open('static/Cup.jpg')
+img=Image.open('Cup.jpg')
 st.sidebar.image(img)
 st.sidebar.title('ICC WORLD CUP 2023')
 
