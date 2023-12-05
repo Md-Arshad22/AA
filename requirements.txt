@@ -1,6 +1,7 @@
 Css
-Numpy
-Pandas
-Matplotlib
-Streamlit
-Plotly
+numpy
+pandas
+matplotlib
+streamlit
+plotly
+PIL
