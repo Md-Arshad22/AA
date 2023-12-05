@@ -23,8 +23,8 @@ def main():
 if __name__ == "__main__":
     main()
 
-img=Image.open('static/Cup.jpg')
-st.sidebar.image(img)
+# img=Image.open('static/Cup.jpg')
+# st.sidebar.image(img)
 st.sidebar.title('ICC WORLD CUP 2023')
 
 Squad = {'Batsmen':['R sharma','S Gill','Vkohli','S iyyer','KL Rahul','S yadav'],
