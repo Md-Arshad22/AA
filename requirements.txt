@@ -1,0 +1,6 @@
+Css
+Numpy
+Pandas
+Matplotlib
+Streamlit
+Plotly
