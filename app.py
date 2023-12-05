@@ -1,4 +1,4 @@
-import numpy as np
+simport numpy as np
 import pandas as pd
 
 import streamlit as st
@@ -23,7 +23,7 @@ def main():
 if __name__ == "__main__":
     main()
 
-img=Image.open('Cup.jpg')
+img=Image.open('static/Cup.jpg')
 st.sidebar.image(img)
 st.sidebar.title('ICC WORLD CUP 2023')
 
