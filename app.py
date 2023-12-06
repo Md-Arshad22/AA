@@ -22,6 +22,11 @@ def main():
     st.markdown(page_bg_img, unsafe_allow_html=True)
 if __name__ == "__main__":
     main()
+
+# img=Image.open('static/Cup.jpg')
+# st.sidebar.image(img)
+st.sidebar.title('ICC WORLD CUP 2023')
+
 Wicket ={'Bowlers':['M Shami','A Zampa','S Madushanka','J Bumrah','G Coetzee','S Afridi','M Jensen','R Jadeja','J Hazlewood','M Santner'],
          'Wickets':[24,23,21,20,20,18,17,16,16,16]}
 df3 = pd.DataFrame(Wicket)
@@ -29,9 +34,12 @@ show_chart = st.sidebar.checkbox('Show Line Chart')
 if show_chart:
     st.line_chart(df3.set_index('Bowlers'))
 
-# img=Image.open('static/Cup.jpg')
-# st.sidebar.image(img)
-st.sidebar.title('ICC WORLD CUP 2023')
+Score ={'Batsmen':['V Kohli','R Sharma','De Kock','R Ravindra','D Mitchell','D Warner','S Iyer','Kl Rahul','Van der Dussen','M Marsh'],
+    'Runs':[765,597,594,578,552,535,530,452,448,441]}
+df2 = pd.DataFrame(Score)
+show_chart = st.sidebar.checkbox('Show bar Chart')
+if show_chart:
+    st.bar_chart(df2.set_index('Batsmen'))
 
 Squad = {'Batsmen':['R sharma','S Gill','Vkohli','S iyyer','KL Rahul','S yadav'],
          'All Rounder':['R Jadeja'],
