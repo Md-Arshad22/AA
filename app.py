@@ -38,7 +38,7 @@ if st.sidebar.button('squad'):
 Table ={'TEAMS':['IND','AUS','RSA','NZ','PAK','AFG','ENG','BAN','SN','NED'],
         'POINTS':[18,14,14,10,8,8,6,4,4,4]}
 df1= pd.DataFrame(Table)
-points =bar(df1, x='TEAMS', y='POINTS')
+points = px.bar(df1, x='TEAMS', y='POINTS')
 if st.sidebar.button('points'):
     st.subheader('teams point table')
     st.bar_chart(df1.set_index('TEAMS'))
