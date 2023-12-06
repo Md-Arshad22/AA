@@ -3,7 +3,7 @@ import pandas as pd
 # import plotly as px 
 import matplotlib.pyplot as plt
 import streamlit as st
-from PIL import Image
+# from PIL import Image
 import requests
 
 st.title('ICC MENS ODI CRICKET WORLD CUP 2023')
