@@ -35,6 +35,13 @@ df= pd.Series(Squad)
 if st.sidebar.button('squad'):
     st.write(df)
 
+Score={'Batsmen':['V Kohli','R Sharma','De Kock','R Ravindra','D Mitchell','D Warner','S Iyer','KL Rahul','Van der Dussen','M Marsh'],
+       'Runs':[765,597,594,578,552,535,452,448,441]}
+df2 = pd.DataFrame(Score)
+show_chart = st.sidebar.checkbox('Show Runs Chart')
+if show_chart:
+    st.bar_chart(df2.set_index('Batsmen')) 
+
 Table ={'TEAMS':['IND','AUS','RSA','NZ','PAK','AFG','ENG','BAN','SN','NED'],
         'POINTS':[18,14,14,10,8,8,6,4,4,4]}
 df1= pd.DataFrame(Table)
@@ -51,19 +58,19 @@ if st.sidebar.button('Per'):
     st.subheader('best win percentage in ICC WORLD-CUP 2023')
     st.write(Per)
 
-Score={'Batsmen':['V Kohli','R Sharma','De Kock','R Ravindra','D Mitchell','D Warner','S Iyer','KL Rahul','Van der Dussen','M Marsh'],
-       'Runs':[765,597,594,578,552,535,452,448,441]}
-df2 = pd.DataFrame(Score)
-show_chart = st.sidebar.checkbox('Show Runs Chart')
-if show_chart:
-    st.bar_chart(df2.set_index('Batsmen'))            
-                 
-# Wicket ={'Bowlers':['M Shami','A Zampa','S Madushanka','J Bumrah','G Coetzee','S Afridi','M Jensen','R Jadeja','J Hazlewood','M Santner'],
-#          'Wickets':[24,23,21,20,20,18,17,16,16,16]}
-# df3 = pd.DataFrame(Wicket)
-# show_chart = st.sidebar.checkbox('Show Line Chart')
+# Score={'Batsmen':['V Kohli','R Sharma','De Kock','R Ravindra','D Mitchell','D Warner','S Iyer','KL Rahul','Van der Dussen','M Marsh'],
+#        'Runs':[765,597,594,578,552,535,452,448,441]}
+# df2 = pd.DataFrame(Score)
+# show_chart = st.sidebar.checkbox('Show Runs Chart')
 # if show_chart:
-#     st.line_chart(df3.set_index('Bowlers'))
+#     st.bar_chart(df2.set_index('Batsmen'))            
+                 
+Wicket ={'Bowlers':['M Shami','A Zampa','S Madushanka','J Bumrah','G Coetzee','S Afridi','M Jensen','R Jadeja','J Hazlewood','M Santner'],
+         'Wickets':[24,23,21,20,20,18,17,16,16,16]}
+df3 = pd.DataFrame(Wicket)
+show_chart = st.sidebar.checkbox('Show Line Chart')
+if show_chart:
+    st.line_chart(df3.set_index('Bowlers'))
 
 
 
