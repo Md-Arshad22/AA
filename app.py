@@ -60,7 +60,7 @@ Wins ={'Teams':['IND','AUS','RSA','NZ','PAK','AFG','ENG','BAN','SN','NED'],
        'Percentage':[90,81,70,50,44,44,33,22,22,22]}
 var=pd.DataFrame(Wins)
 
-Per = ax.bar(var, x='Teams',y='Percentage')
+Per = plt.bar(var, x='Teams',y='Percentage')
 if st.sidebar.button('Per'):
     st.subheader('best win percentage in ICC WORLD-CUP 2023')
     st.write(Per)
