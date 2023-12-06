@@ -49,13 +49,13 @@ show_chart = st.sidebar.checkbox('Show Line Chart')
 if show_chart:
     st.line_chart(df3.set_index('Bowlers'))
 
-Table ={'TEAMS':['IND','AUS','RSA','NZ','PAK','AFG','ENG','BAN','SN','NED'],
-        'POINTS':[18,14,14,10,8,8,6,4,4,4]}
-df1= pd.DataFrame(Table)
-points = px.bar(df1, x='TEAMS', y='POINTS')
-if st.sidebar.button('points'):
-    st.subheader('teams point table')
-    st.bar_chart(df1.set_index('TEAMS'))
+# Table ={'TEAMS':['IND','AUS','RSA','NZ','PAK','AFG','ENG','BAN','SN','NED'],
+#         'POINTS':[18,14,14,10,8,8,6,4,4,4]}
+# df1= pd.DataFrame(Table)
+# points = px.bar(df1, x='TEAMS', y='POINTS')
+# if st.sidebar.button('points'):
+#     st.subheader('teams point table')
+#     st.bar_chart(df1.set_index('TEAMS'))
 
 Wins ={'Teams':['IND','AUS','RSA','NZ','PAK','AFG','ENG','BAN','SN','NED'],
        'Percentage':[90,81,70,50,44,44,33,22,22,22]}
