@@ -56,7 +56,7 @@ Score={'Batsmen':['V Kohli','R Sharma','De Kock','R Ravindra','D Mitchell','D Wa
 df2 = pd.DataFrame(Score)
 show_chart = st.sidebar.checkbox('Show Runs Chart')
 if show_chart:
-    st.bar_chart(df2.set_index('Batsmen')            
+    st.bar_chart(df2.set_index('Batsmen'))            
                  
 # Wicket ={'Bowlers':['M Shami','A Zampa','S Madushanka','J Bumrah','G Coetzee','S Afridi','M Jensen','R Jadeja','J Hazlewood','M Santner'],
 #          'Wickets':[24,23,21,20,20,18,17,16,16,16]}
