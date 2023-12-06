@@ -74,13 +74,7 @@ if show_chart:
 #     st.subheader('best win percentage in ICC WORLD-CUP 2023')
 #     st.write(Per)
 
-
-# Wicket ={'Bowlers':['M Shami','A Zampa','S Madushanka','J Bumrah','G Coetzee','S Afridi','M Jensen','R Jadeja','J Hazlewood','M Santner'],
-#          'Wickets':[24,23,21,20,20,18,17,16,16,16]}
-# df3 = pd.DataFrame(Wicket)
-# show_chart = st.sidebar.checkbox('Show Line Chart')
-# if show_chart:
-#     st.line_chart(df3.set_index('Bowlers'))
+                 
 
 
 
@@ -89,8 +83,6 @@ if show_chart:
 
 
 
-    # Runs = px.bar(df2, x='Players', y='Runs')
-# if st.sidebar.button('Runs'):
-#     st.write(Runs)
+
 
 
