@@ -1,6 +1,6 @@
 import numpy as np
 import pandas as pd
-# import plotly as px 
+import plotly as px 
 import matplotlib.pyplot as plt
 import streamlit as st
 # from PIL import Image
@@ -14,7 +14,7 @@ def main():
     page_bg_img ='''
     <style>
   [data-testid="stAppViewContainer"] {
-    # background-image: url(https://www.cric-life.com/wp-content/uploads/2020/06/blind-cricket.jpeg);
+    background-image: url(https://www.cric-life.com/wp-content/uploads/2020/06/blind-cricket.jpeg);
     # background-image:url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTm-SlXk2jg3kIO_Ke8YVhIIp-ZNTjNOGWVOQ&usqp=CAU);
     background-size: cover;
 }
