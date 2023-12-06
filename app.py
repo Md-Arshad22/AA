@@ -40,9 +40,7 @@ df2 = pd.DataFrame(Score)
 show_chart = st.sidebar.checkbox('Show Runs Chart')
 if show_chart:
     st.bar_chart(df2.set_index('Batsmen')
-
-
-
+     
 Score ={'Batsmen':['V Kohli','R Sharma','De Kock','R Ravindra','D Mitchell','D Warner','S Iyer','Kl Rahul','Van der Dussen','M Marsh'],
     'Runs':[765,597,594,578,552,535,530,452,448,441]}
 df2 = pd.DataFrame(Score)
