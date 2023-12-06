@@ -1,7 +1,7 @@
-Css
+css
 numpy
 pandas
 matplotlib
 streamlit
 plotly
-PIL
+
