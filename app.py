@@ -50,12 +50,12 @@ show_chart = st.sidebar.checkbox('Show Runs Chart')
 if show_chart:
     st.bar_chart(df2.set_index('Batsmen')
 
-Squad = {'Batsmen':['R Sharma','S Gill','V kohli','S iyyer','KL Rahul','S yadav'],
-         'All Rounder':['R Jadeja'],
-         'Bowlers':['M shami','J Bumrah','M Siraj']}
-df= pd.Series(Squad)
-if st.sidebar.button('squad'):
-    st.write(df)
+# Squad = {'Batsmen':['R Sharma','S Gill','V kohli','S iyyer','KL Rahul','S yadav'],
+#          'All Rounder':['R Jadeja'],
+#          'Bowlers':['M shami','J Bumrah','M Siraj']}
+# df= pd.Series(Squad)
+# if st.sidebar.button('squad'):
+#     st.write(df)
 
 Table ={'TEAMS':['IND','AUS','RSA','NZ','PAK','AFG','ENG','BAN','SN','NED'],
         'POINTS':[18,14,14,10,8,8,6,4,4,4]}
