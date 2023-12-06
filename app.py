@@ -43,7 +43,7 @@ if show_chart:
 
 Squad = {'Batsmen':['R sharma','S Gill','Vkohli','S iyyer','KL Rahul','S yadav'],
          'All Rounder':['R Jadeja'],
-         'Bowler':['M shami','J Bumrah','M Siraj']}
+         'Bowlers':['M shami','J Bumrah','M Siraj']}
 df= pd.Series(Squad)
 if st.sidebar.button('squad'):
     st.write(df)
