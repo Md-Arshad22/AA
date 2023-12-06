@@ -57,22 +57,22 @@ if show_chart:
 # if st.sidebar.button('squad'):
 #     st.write(df)
 
-Table ={'TEAMS':['IND','AUS','RSA','NZ','PAK','AFG','ENG','BAN','SN','NED'],
-        'POINTS':[18,14,14,10,8,8,6,4,4,4]}
-df1= pd.DataFrame(Table)
-points =bar(df1, x='TEAMS', y='POINTS')
-if st.sidebar.button('points'):
-    st.subheader('teams point table')
-    st.bar_chart(df1.set_index('TEAMS'))
+# Table ={'TEAMS':['IND','AUS','RSA','NZ','PAK','AFG','ENG','BAN','SN','NED'],
+#         'POINTS':[18,14,14,10,8,8,6,4,4,4]}
+# df1= pd.DataFrame(Table)
+# points =bar(df1, x='TEAMS', y='POINTS')
+# if st.sidebar.button('points'):
+#     st.subheader('teams point table')
+#     st.bar_chart(df1.set_index('TEAMS'))
 
-Wins ={'Teams':['IND','AUS','RSA','NZ','PAK','AFG','ENG','BAN','SN','NED'],
-       'Percentage':[90,81,70,50,44,44,33,22,22,22]}
-var=pd.DataFrame(Wins)
+# Wins ={'Teams':['IND','AUS','RSA','NZ','PAK','AFG','ENG','BAN','SN','NED'],
+#        'Percentage':[90,81,70,50,44,44,33,22,22,22]}
+# var=pd.DataFrame(Wins)
 
-Per = plt.bar(var, x='Teams',y='Percentage')
-if st.sidebar.button('Per'):
-    st.subheader('best win percentage in ICC WORLD-CUP 2023')
-    st.write(Per)
+# Per = plt.bar(var, x='Teams',y='Percentage')
+# if st.sidebar.button('Per'):
+#     st.subheader('best win percentage in ICC WORLD-CUP 2023')
+#     st.write(Per)
 
 
 # Wicket ={'Bowlers':['M Shami','A Zampa','S Madushanka','J Bumrah','G Coetzee','S Afridi','M Jensen','R Jadeja','J Hazlewood','M Santner'],
