@@ -28,10 +28,6 @@ if __name__ == "__main__":
 # st.sidebar.image(img)
 st.sidebar.title('ICC WORLD CUP 2023')
 
-Wins ={'Teams':['IND','AUS','RSA','NZ','PAK','AFG','ENG','BAN','SN','NED'],
-       'Percentage':[90,81,70,50,44,44,33,22,22,22]}
-var=pd.DataFrame(Wins)
-
 Squad = {'Batsmen':['R Sharma','S Gill','V kohli','S iyyer','KL Rahul','S yadav'],
          'All Rounder':['R Jadeja'],
          'Bowlers':['M shami','J Bumrah','M Siraj']}
@@ -50,12 +46,6 @@ if st.sidebar.button('points'):
 Wins ={'Teams':['IND','AUS','RSA','NZ','PAK','AFG','ENG','BAN','SN','NED'],
        'Percentage':[90,81,70,50,44,44,33,22,22,22]}
 var=pd.DataFrame(Wins)
-
-Per = plt.bar(var, x='Teams',y='Percentage')
-if st.sidebar.button('Per'):
-    st.subheader('best win percentage in ICC WORLD-CUP 2023')
-    st.write(Per)
-    
 Per = plt.bar(var, x='Teams',y='Percentage')
 if st.sidebar.button('Per'):
     st.subheader('best win percentage in ICC WORLD-CUP 2023')
