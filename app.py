@@ -36,7 +36,7 @@ if st.sidebar.button('squad'):
     st.write(df)
 
 Score={'Batsmen':['V Kohli','R Sharma','De Kock','R Ravindra','D Mitchell','D Warner','S Iyer','KL Rahul','Van der Dussen','M Marsh'],
-       'Runs':[765,597,594,578,552,535,452,448,441]}
+       'Runs':[765,597,594,578,552,535,530,452,448,441]}
 df2 = pd.DataFrame(Score)
 show_chart = st.sidebar.checkbox('Show Runs Chart')
 if show_chart:
