@@ -6,6 +6,7 @@ import streamlit as st
 # from PIL import Image
 import requests
 
+
 st.title('ICC MENS ODI CRICKET WORLD CUP 2023')
 st.sidebar.title('world-cup')
 
